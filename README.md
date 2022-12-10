@@ -38,7 +38,7 @@ Users should be able to:
 
 - Bootstrap 5
 - Vanilla HTML
-- [WIP]
+- Vanilla CSS
 
 ### What I learned
 [WIP]
