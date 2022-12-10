@@ -9,60 +9,80 @@
   <title>Frontend Mentor | News homepage</title>
 
   <style>
-    body { padding: 150px; }
+    body { padding: 150px; background-color: rgb(242, 242, 242);}
+    .main-bg { background-color: white; padding: 45px 150px 45px 150px;}
+    img { width: 75%;}
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 text-uppercase h1">w.</span>
+  <div class="main-bg shadow-lg rounded-2">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 text-uppercase fw-bolder fs-1">w.</span>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">New</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Popular</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+        <ul>
+      </div>
+    </nav>
+
+    <div class="d-flex mt-4 gap-4">
+      <!-- Column 1 -->
+        <div class="flex-column">
+          <!-- Row 1 -->
+          <div class="d-flex flex-row">    
+            <img src="./assets/images/image-web-3-desktop.jpg"/>
+          </div>
+          <!-- Row 2 -->
+          <div class="d-flex flex-row mt-3 gap-5">
+            <!-- column 1/row 2 -->
+            <div class="flex-column">
+              <h1 class="fw-bolder">The Bright Future of Web 3.0?</h1>
+            </div>
+            <!-- column 2/row 2 -->
+            <div class="flex-column">
+              <p class="form-text fs-6 text-wrap w-50 fw-bold">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <button class="btn btn-dark rounded-0 text-uppercase pe-4 ps-4 p-2">Read more</button>
+            </div>
+          </div>
+        </div>
+        <!-- Column 2 -->
+        <div class="flex-column bg-dark p-4 text-white">
+          <h1 class="text-warning mb-3">New</h1>
+          <h5>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <hr/>
+          <h5>The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          <hr/>
+          <h5>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
     </div>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">New</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Popular</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
-      <ul>
-    </div>
-  </nav>
+    <!--
+    01
+    Reviving Retro PCs
+    What happens when old PCs are given modern upgrades?
 
-  The Bright Future of Web 3.0?
+    02
+    Top 10 Laptops of 2022
+    Our best picks for various needs and budgets.
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/pixelRena">Serena</a>.
+    03
+    The Growth of Gaming
+    How the pandemic has sparked fresh opportunities.
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/pixelRena">Serena</a>.
+    </div> -->
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
