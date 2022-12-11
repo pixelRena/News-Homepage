@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="./styles/fonts.css">
   <link rel="stylesheet" href="./styles/customvariables.css">
 
-  
   <title>Frontend Mentor | News homepage</title>
 
   <style>
@@ -21,27 +20,34 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 text-uppercase text-black fw-bolder fs-large">w.</span>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto fs-10">
-          <li class="nav-item me-3"><a href="#" class="nav-link hover-text-red">Home</a></li>
-          <li class="nav-item me-3"><a href="#" class="nav-link hover-text-red">New</a></li>
-          <li class="nav-item me-3"><a href="#" class="nav-link hover-text-red">Popular</a></li>
-          <li class="nav-item me-3"><a href="#" class="nav-link hover-text-red">Trending</a></li>
-          <li class="nav-item"><a href="#" class="nav-link  hover-text-red">Categories</a></li>
-        </ul>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end w-70" tabindex="-1" aria-labelledby="navbarNavLabel" id="navbarNav">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-lg btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto fs-10">
+              <li class="nav-item me-3"><a href="#" class="nav-link hover-text-red">Home</a></li>
+              <li class="nav-item me-3"><a href="#" class="nav-link hover-text-red">New</a></li>
+              <li class="nav-item me-3"><a href="#" class="nav-link hover-text-red">Popular</a></li>
+              <li class="nav-item me-3"><a href="#" class="nav-link hover-text-red">Trending</a></li>
+              <li class="nav-item"><a href="#" class="nav-link  hover-text-red">Categories</a></li>
+            </ul>
+          </div>
       </div>
     </nav>
 
-    <div class="d-flex mt-4 gap-4">
+    <div class="d-flex flex-wrap flex-lg-nowrap mt-4 gap-4">
       <!-- Column 1 -->
         <div class="flex-column w-100">
           <!-- Row 1 -->
-          <div class="d-flex flex-row">    
+          <div class="d-flex flex-lg-row flex-column">    
             <img src="./assets/images/image-web-3-desktop.jpg"/>
           </div>
           <!-- Row 2 -->
-          <div class="d-flex flex-row mt-4 gap-5">
+          <div class="d-flex flex-lg-row flex-column mt-4 gap-5">
             <!-- column 1/row 2 -->
             <div class="flex-column">
               <h1 class="f-larger text-black">The Bright Future of Web 3.0?</h1>
@@ -54,7 +60,7 @@
           </div>
         </div>
         <!-- Column 2 -->
-        <div class="flex-column bg-dark-blue p-4 w-45 text-white">
+        <div class="flex-column bg-dark-blue w-45 p-4 text-white">
           <h1 class="text-orange mb-5 fw-bold">New</h1>
           <a href="#" class="h5 text-decoration-none fw-bold mt-5 hover-text-orange white-text">Hydrogen VS Electric Cars</a>
             <p class="text-dark-blue mb-4">Will hydrogen-fueled cars ever catch up to EVs?</p>
@@ -68,7 +74,7 @@
     </div>
 
     <!-- 1 row, 3 columns -->
-    <div class="d-flex mt-5">
+    <div class="d-flex flex-column flex-lg-row mt-5">
       <div class="d-flex gap-4">
         <div class="flex-column" style="width: 150px; height: 200px; overflow: hidden;">
           <img src="./assets/images/image-retro-pcs.jpg"/>

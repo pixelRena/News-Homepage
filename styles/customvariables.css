@@ -21,15 +21,12 @@ img {
   width: 100%;
 }
 
-.f-larger {
-  font-family: inter-extrabold;
-  font-size: 55px;
-  font-weight: 800;
-  line-height: 55px;
-}
-
 .w-45 {
   width: 45%;
+}
+
+.w-70 {
+  width: 70%;
 }
 
 .bg-dark-blue {
@@ -48,6 +45,23 @@ img {
   color: black;
 }
 
+.white-text {
+  color: white;
+}
+
+.text-orange {
+  color: hsl(35deg, 77%, 62%);
+}
+
+.hover-text-red:hover,
+.offcanvas-body .navbar-nav .nav-link:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
+.hover-text-orange:hover {
+  color: hsl(35deg, 77%, 62%);
+}
+
 .fw-semibold {
   font-weight: 600;
 }
@@ -64,19 +78,6 @@ img {
   background-color: black;
 }
 
-.white-text {
-  color: white;
-}
-
-.hover-text-orange:hover {
-  color: hsl(35deg, 77%, 62%);
-}
-
-.hover-text-red:hover,
-.navbar-collapse .navbar-nav .nav-link:hover {
-  color: hsl(5deg, 85%, 63%);
-}
-
 .fs-9 {
   font-size: 15px;
 }
@@ -89,6 +90,24 @@ img {
   font-size: 45px;
 }
 
-.text-orange {
-  color: hsl(35deg, 77%, 62%);
+.f-larger {
+  font-family: inter-extrabold;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: unset;
+  }
+  .main-bg {
+    padding: 20px;
+  }
+  .offcanvas-body .navbar-nav .nav-link {
+    color: black;
+  }
+  .w-45 {
+    width: unset;
+  }
 }/*# sourceMappingURL=customvariables.css.map */
