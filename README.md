@@ -24,11 +24,11 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-[WIP]
+
 
 ### Links
 
-- Solution URL: [WIP]
+- Solution URL: 
 - Live Site URL: [https://pixelrena.github.io/News-Homepage/](https://pixelrena.github.io/News-Homepage/)
 
 ## My process
