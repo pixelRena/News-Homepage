@@ -35,9 +35,9 @@ Users should be able to:
 
 ### Built with
 
-- Bootstrap 5
-- Vanilla HTML
-- SCSS
+- [![Bootstrap][Bootstrap]][Bootstrap-url]
+- [![Html][Html]][Html-url]
+- [![Sass][Sass]][Sass-url]
 - [Abril FatFace Font](https://fonts.google.com/specimen/Abril+Fatface?preview.text=W.&preview.text_type=custom)
 
 ### What I learned
@@ -55,3 +55,10 @@ Users should be able to:
 - Stackoverflow ["Bootstrap Change Navbar Link Colors"](https://stackoverflow.com/questions/48735679/bootstrap-change-navbar-link-colors) - I understood why I shouldn't use !important and how to actually override bootstraps class names
 - [Bootstrap 5.2 Offcanvas Examples](https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/) - This was very helpful in showing my a live demo of a responsive offcanvas that actually shows the nav-items on large screens, learned that I had to implement some overriding properties
 
+
+[Bootstrap]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com/docs/5.2/getting-started/introduction/
+[Html]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[Html-url]: https://www.w3schools.com/html/
+[Sass]: https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white
+[Sass-url]: https://sass-lang.com/
