@@ -1,7 +1,68 @@
 body {
+  overflow-x: hidden;
   font-family: inter-regular;
-  padding: 150px;
+  padding: 120px;
   background-color: hsl(36deg, 100%, 99%);
+}
+
+.circles-container,
+.bracket,
+.circle-outline,
+.slashes,
+.wavy-line {
+  position: absolute;
+}
+
+.circle-outline,
+.slashes,
+.wavy-line {
+  z-index: -50;
+}
+
+.circles-container {
+  top: 50%;
+  left: -10px;
+}
+
+.circles {
+  margin-top: 5px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(100, 198, 237);
+}
+
+.bracket {
+  top: -70px;
+  left: 50%;
+  font-weight: bolder;
+  font-size: 120px;
+  color: hsla(5deg, 85%, 63%, 0.42);
+}
+
+.circle-outline {
+  bottom: -300px;
+  right: 10px;
+  width: 250px;
+  height: 250px;
+  background: rgba(100, 198, 237, 0);
+  border-radius: 50%;
+  border: 10px solid rgba(122, 174, 233, 0.255);
+}
+
+.slashes {
+  font-size: 170px;
+  color: rgba(122, 174, 233, 0.255);
+  bottom: -300px;
+  left: 320px;
+}
+
+.wavy-line {
+  font-size: 170px;
+  right: 40px;
+  top: 50%;
+  color: hsla(5deg, 85%, 63%, 0.42);
+  transform: rotate(-90deg);
 }
 
 .navbar-brand {
@@ -72,14 +133,22 @@ img {
 
 .btn {
   background-color: hsl(5deg, 85%, 63%);
+  padding: 12px 20px 12px 20px;
 }
 
 .btn:hover {
   background-color: black;
 }
 
+.btn:focus,
+.offcanvas-header button:focus,
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .fs-9 {
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .fs-10 {
@@ -109,5 +178,22 @@ img {
   }
   .w-45 {
     width: unset;
+  }
+  .shapes-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 968px) {
+  .navbar .offcanvas {
+    position: static;
+    z-index: auto;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    visibility: visible;
+    background-color: transparent;
+    border: 0;
+    transform: none;
+    transition: none;
   }
 }/*# sourceMappingURL=customvariables.css.map */

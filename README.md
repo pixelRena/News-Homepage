@@ -11,7 +11,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -38,14 +37,11 @@ Users should be able to:
 
 - Bootstrap 5
 - Vanilla HTML
-- Vanilla CSS
+- SCSS
 - [Abril FatFace Font](https://fonts.google.com/specimen/Abril+Fatface?preview.text=W.&preview.text_type=custom)
 
 ### What I learned
-- I learned how to override bootstraps classes without using !important. Whenever I did research it was suggested to never use !important unless it is for quick testing because of how it can cause problems later for those who many have the same classes. I never knew how to do this before surprisingly but you have to be really specfic when overriding it.
-
-### Useful resources
-[WIP]
+- I learned how to override bootstraps classes without using !important. Whenever I did research it was suggested to never use !important unless it is for quick testing because of how it can cause problems later for those who many have the same classes. I never knew how to do this before surprisingly but you have to be really specfic when overriding it. I never used offcanvas until today, so that was also a neat trick I learned from Bootstrap.
 
 ## Author
 
@@ -57,5 +53,5 @@ Users should be able to:
 
 - Stackoverflow ["Bootstrap 4.0 - Use flex columns"](https://stackoverflow.com/questions/46076910/bootstrap-4-0-use-flex-columns) - This helped me solve the problem where I was having issues creating 2 columns for the last row on each column. I found that my problem was that I did not add another d-flex class as I should have to trigger the 'flex-column' class.
 - Stackoverflow ["Bootstrap Change Navbar Link Colors"](https://stackoverflow.com/questions/48735679/bootstrap-change-navbar-link-colors) - I understood why I shouldn't use !important and how to actually override bootstraps class names
-[WIP]
+- [Bootstrap 5.2 Offcanvas Examples](https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/) - This was very helpful in showing my a live demo of a responsive offcanvas that actually shows the nav-items on large screens, learned that I had to implement some overriding properties
 

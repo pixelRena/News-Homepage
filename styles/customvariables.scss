@@ -6,13 +6,73 @@ $neutral-dark-grayish-blue: hsl(236, 13%, 42%);
 $neutral-dark-blue: hsl(240, 100%, 5%);
 
 body { 
+    overflow-x: hidden;
     font-family: inter-regular; 
-    padding: 150px; 
+    padding: 120px; 
     background-color: $neutral-off-white;
 }
 
-.navbar-brand { font-family: abril; }
+.circles-container,
+.bracket,
+.circle-outline,
+.slashes,
+.wavy-line {
+    position: absolute;
+}
 
+.circle-outline,
+.slashes,
+.wavy-line {
+    z-index:-50;
+}
+
+.circles-container {
+    top: 50%;
+    left: -10px;
+}
+
+.circles {
+    margin-top: 5px;
+    border-radius:50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(100, 198, 237);
+}
+
+.bracket {
+    top: -70px;
+    left:50%;
+    font-weight: bolder;
+    font-size: 120px;
+    color:hsla(5, 85%, 63%, 0.42)
+}
+
+.circle-outline {
+    bottom:-300px;
+    right: 10px;
+    width: 250px;
+    height: 250px;
+    background:rgba(100, 198, 237, 0);
+    border-radius: 50%;
+    border: 10px solid rgba(122, 174, 233, 0.255);
+}
+
+.slashes {
+    font-size: 170px;
+    color: rgba(122, 174, 233, 0.255);
+    bottom: -300px;
+    left: 320px;
+}
+
+.wavy-line {
+    font-size: 170px;
+    right: 40px;
+    top: 50%;
+    color:hsla(5, 85%, 63%, 0.42);
+    transform: rotate(-90deg);
+}
+
+.navbar-brand { font-family: abril; }
 .bold-font { font-family: inter-bold; }
 
 .main-bg { 
@@ -40,11 +100,21 @@ img { width: 100%; }
 .fw-semibold { font-weight: 600; }
 .char-apart { letter-spacing: 5px; }
 
-.btn { background-color: $primary-red; }
+// Buttons
+.btn { 
+    background-color: $primary-red;
+    padding: 12px 20px 12px 20px;
+}
 .btn:hover { background-color: black; }
+.btn:focus,
+.offcanvas-header button:focus, 
+.navbar-toggler:focus { 
+    outline: none;
+    box-shadow: none;
+}
 
 // Font sizes
-.fs-9 { font-size: 15px; }
+.fs-9 { font-size: 11px; }
 .fs-10 { font-size: 18px; }
 .fs-large { font-size: 45px; }
 .f-larger { 
@@ -54,11 +124,30 @@ img { width: 100%; }
     line-height: 55px;
 }
 
+// Media queries
 @media screen and (max-width: 768px) { 
     body { padding: unset; }
     .main-bg { padding: 20px; }
     .offcanvas-body .navbar-nav .nav-link { color: black; }
     .w-45 { width: unset;}
+    .shapes-container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 968px) {
+ .navbar .offcanvas {
+    position: static;
+    z-index: auto;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    visibility: visible;
+    background-color: transparent;
+    border: 0;
+    transform: none;
+    transition: none;
+ }
 }
 
 
