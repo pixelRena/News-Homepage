@@ -53,5 +53,7 @@ Users should be able to:
 - Twitter - [@pixelRena](https://twitter.com/pixelRena)
 
 ## Acknowledgments
+
+- Stackoverflow ["Bootstrap 4.0 - Use flex columns"](https://stackoverflow.com/questions/46076910/bootstrap-4-0-use-flex-columns) - This helped me solve the problem where I was having issues creating 2 columns for the last row on each column. I found that my problem was that I did not add another d-flex class as I should have to trigger the 'flex-column' class.
 [WIP]
 
