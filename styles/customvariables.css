@@ -1,0 +1,94 @@
+body {
+  font-family: inter-regular;
+  padding: 150px;
+  background-color: hsl(36deg, 100%, 99%);
+}
+
+.navbar-brand {
+  font-family: abril;
+}
+
+.bold-font {
+  font-family: inter-bold;
+}
+
+.main-bg {
+  background-color: hsl(36deg, 100%, 99%);
+  padding: 45px 220px 45px 220px;
+}
+
+img {
+  width: 100%;
+}
+
+.f-larger {
+  font-family: inter-extrabold;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.bg-dark-blue {
+  background-color: hsl(240deg, 100%, 5%);
+}
+
+.text-gray {
+  color: hsl(233deg, 8%, 79%);
+}
+
+.text-dark-blue {
+  color: hsl(233deg, 8%, 79%);
+}
+
+.text-black {
+  color: black;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.char-apart {
+  letter-spacing: 5px;
+}
+
+.btn {
+  background-color: hsl(5deg, 85%, 63%);
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.white-text {
+  color: white;
+}
+
+.hover-text-orange:hover {
+  color: hsl(35deg, 77%, 62%);
+}
+
+.hover-text-red:hover,
+.navbar-collapse .navbar-nav .nav-link:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
+.fs-9 {
+  font-size: 15px;
+}
+
+.fs-10 {
+  font-size: 18px;
+}
+
+.fs-large {
+  font-size: 45px;
+}
+
+.text-orange {
+  color: hsl(35deg, 77%, 62%);
+}/*# sourceMappingURL=customvariables.css.map */
