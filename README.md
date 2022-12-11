@@ -24,11 +24,12 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
+<img src="https://github.com/pixelRena/News-Homepage/blob/main/assets/images/final-desktop-design.png?raw=true" width="800"/>
+<img src="https://github.com/pixelRena/News-Homepage/blob/main/assets/images/final-mobile-design.png" width="200"/>
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/news-homepage-hpyZY2jvqC
 - Live Site URL: [https://pixelrena.github.io/News-Homepage/](https://pixelrena.github.io/News-Homepage/)
 
 ## My process
